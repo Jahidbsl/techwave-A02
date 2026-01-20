@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* shared css */
+:root {
+
+        --bg-primary: #1A0B2E;
+        --bg-secondary: #2E003E;
+        --bg-linear: linear-gradient(90deg,
+                        #F7E93F 0%,
+                        #FB09B4 50%,
+                        #9100F8 100%);
+        --text-color: #FFFFFF;
+        --color-accent: #00FF88;
+        --card: #351165;
+
+
+}
+
+
+
+
+
+body {
+        background-color: var(--bg-primary);
+        color: var(--text-color);
+        font-family: 'Inter', sans-serif;
+}
+/* hero section */
+.subscribe-btn {
+        background: var(--bg-linear);
+        color: var(--text-color);
+}
+
+.spotify-btn {
+        background: var(--bg-linear);
+        color: var(--text-color);
+}
+
+.hero-sub-btn {
+        border: 2px solid transparent;
+        border-radius: 50px;
+        color: var(--color-accent);
+        background-image: linear-gradient(var(--bg-primary)),
+                linear-gradient(90deg, #007B70 0%, #ECF955 100%);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+}
+
+.wave {
+        background: var(--bg-linear);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.hero {
+        /* background-image: url('./assets/hero-bg.png');
+        background-size: cover;
+        background-position: center;
+        height: 760px;
+        width: full; */
+}
+
+.new-btn button {
+        background: var(--color-accent);
+        color: var(--bg-primary);
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        /* padding: 10px 20px; */
+        border-radius: 9999px;
+        font-weight: 600;
+        box-shadow: 0px 3px 27px var(--color-accent);
+}
+
+/* about section */
+hr {
+        
+        border: 1px solid var(--text-color);
+        
+}

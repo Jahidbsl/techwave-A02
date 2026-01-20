@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-contain flex justify-between items-center p-5 lg:mx-48 lg:pt-6 lg:pb-6">
+            <div class="logo text-2xl font-bold">
+                <h1>Tech<span class="wave">Wave</span></h1>
+            </div>
+            <div class="">
+                <nav>
+                    <ul class=" hidden lg:flex gap-6 ">
+
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Episodes</a></li>
+                        <li><a href="#">Host</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="subscribe-btn hidden lg:px-6 py-3 lg:rounded-full lg:flex items-center gap-2">
+                <button>Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div class="w-6 h-6 lg:hidden lg:hidden">
+                <img class="ml-20" src="./assets/hamburger-menu.png" alt="hamburger-menu">
+            </div>
+
+        </div>
+        <!-- hero section -->
+        <section class="hero bg-[url('./assets/hero-bg.png')] 
+                bg-cover 
+                bg-center 
+                bg-no-repeat
+                w-[440px] 
+                h-[466px]
+                lg:h-[760px] 
+                lg:w-full">
+            <div class=" text-center p-8">
+                <div
+                    class="  absolute w-[200px] h-[200px] top-[120px] left-[118px] lg:top-[185px] lg:left-[588px] lg:w-[350px] lg:h-[350px]">
+                    <img class="" src="./assets/hero-circle.png" alt="hero-circle">
+                </div>
+                <div
+                    class="absolute w-[80px] h-[80px] top-[155px] left-[180px] lg:top-[265px] lg:left-[703px] lg:w-[116px] lg:h-[175px]">
+                    <img class="" src="./assets/microphone.png" alt="microphone">
+                </div>
+                <div class="new-btn absolute 
+            top-[120px] left-[290px] 
+            -translate-x-1/2
+            lg:top-[190px] lg:left-auto lg:right-[600px]">
+                    <button>New</button>
+                </div>
+            </div>
+            <div class="hero-content flex flex-col items-center justify-center mt-4 pt-48 lg:pt-[430px] gap-8">
+                <div class="hero-title flex flex-col items-center gap-4">
+                    <h1 class="text-6xl font-bold">TechWave</h1>
+                    <p class="text-base w-[378px] h-[38] text-center lg:w-[550px] lg:h-5">Your daily dose of tech
+                        insights, productivity hacks, and personal growth</p>
+                </div>
+                <div class="hero-btn flex justify-center gap-2.5">
+                    <button
+                        class="spotify-btn flex items-center gap-2 px-6 py-3 rounded-full text-base hover:scale-105 transition-transform">
+                        <img src="./assets/spotify.png" alt="spotify-logo">Listen on Spotify
+                    </button>
+                    <button
+                        class="hero-sub-btn flex items-center gap-2 px-6 py-3 rounded-full text-base hover:scale-105 transition-transform">
+                        <img src="./assets/message.png" alt="message-logo">Subscribe
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- about section -->
+    <section class="about">
+        <div
+            class="about-content flex flex-col items-center justify-center text-center mt-[70px] ml-[70px] lg:mx-48 lg:my-20">
+            <h3 class="font-bold text-3xl  mb-6  lg:text-5xl">About the Podcast</h3>
+            <p class="text-base">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                We break down complex topics into digestible insights, explore productivity strategies that actually
+                work,
+                and share stories of personal growth from industry leaders. <br> <br>
+
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+        </div>
+        <hr class="w-[400px] m-auto ml-[20px] mt-10 lg:w-[1200px] lg:m-auto">
+
+        <div
+            class="grid grid-cols-2 gap-10 text-center mt-10 mb-20 w-[400px] m-auto ml-4 lg:w-[1200px] lg:m-auto lg:grid-cols-4 lg:gap-2.5 lg:mt-20 lg:mb-24">
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-[var(--color-accent)] font-black text-5xl text-center">150K+</h1>
+                <p class="text-base text-center mt-3.5">Monthly Listeners</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-[var(--color-accent)] font-black text-5xl text-center">200+</h1>
+                <p class="text-base text-center mt-3.5">Episodes Published</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-[var(--color-accent)] font-black text-5xl text-center">4.9★</h1>
+                <p class="text-base text-center mt-3.5">Average Rating</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-[var(--color-accent)] font-black text-5xl text-center">50K+</h1>
+                <p class="text-base text-center mt-3.5">Industry Experts</p>
+            </div>
+        </div>
+    </section>
+    <!-- why choose techwave -->
+    <section class="bg-[var(--bg-secondary)] w-[400px] lg:w-[1600px] lg:px-[200px] lg:py-20 py-10">
+        <h3 class="font-bold text-3xl text-center mb-6 lg:text-5xl">Why Choose TechWave</h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div
+                class=" border-none bg-[var(--card)] rounded-2xl p-[40px] lg:w-[380px] lg:h-[528px] lg:col-span-1 lg:row-span-2">
+                <img class="w-[60px] h-[60px]" src="./assets/headphone.png" alt="icon1">
+                <h3 class="text-2xl font-bold">Premium Audio Quality</h3>
+                <p class="text-base">Experience crystal-clear sound with professional-grade recording equipment and
+                    expert audio
+                    engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+            </div>
+            <div>
+                <img src="./assets/device.png" alt="">
+                <h3>Mobile Friendly</h3>
+                <p>
+                    Listen on the go with seamless mobile experience and offline downloads.
+                </p>
+            </div>
+            <div>
+                <img src="./assets/device.png" alt="">
+                <h3>Mobile Friendly</h3>
+                <p>
+                    Listen on the go with seamless mobile experience and offline downloads.
+                </p>
+            </div>
+            <div class="col-start-2">
+                <img src="./assets/device.png" alt="">
+                <h3>Mobile Friendly</h3>
+                <p>
+                    Listen on the go with seamless mobile experience and offline downloads.
+                </p>
+            </div>
+            <div class="col-start-3">
+                <img src="./assets/device.png" alt="">
+                <h3>Mobile Friendly</h3>
+                <p>
+                    Listen on the go with seamless mobile experience and offline downloads.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
