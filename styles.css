@@ -52,13 +52,7 @@ body {
         -webkit-text-fill-color: transparent;
 }
 
-.hero {
-        /* background-image: url('./assets/hero-bg.png');
-        background-size: cover;
-        background-position: center;
-        height: 760px;
-        width: full; */
-}
+
 
 .new-btn button {
         background: var(--color-accent);
